@@ -27,22 +27,15 @@ thead {
 }
 
 .ascend {
-	background-color: #C2C2E3;
-	background-image: url("ascend.png");
-	background-repeat: no-repeat;
-	background-position: right;
+	background: #C2C2E3 url("ascend.png") no-repeat right;
 	border-color: #C2C2E3;
 }
 
 .descend {
-	background-color: #C2C2E3;
-	background-image: url("descend.png");
-	background-repeat: no-repeat;
-	background-position: right;
+	background: #C2C2E3 url("descend.png") no-repeat right;
 	border-color: #C2C2E3;
 }
 
 .initial {
 	background-color: #00008B;
 }
-

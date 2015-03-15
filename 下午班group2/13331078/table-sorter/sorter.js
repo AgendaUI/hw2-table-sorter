@@ -128,14 +128,14 @@ function sortAlgorithm(flag, list, index){
 	for(var i = 0; i < list.length - 1; ++i){
 		for(var j = 0; j < list.length - 1; ++j){
 			if(flag == true){
-				if(list[j][index] > list[j+1][index]){
+				if(changeType(list[j][index]) > changeType(list[j+1][index])){
 					var temp = list[j];
 					list[j] = list[j+1];
 					list[j+1] = temp;
 				}
 			}
 			else{
-				if(list[j][index] < list[j+1][index]){
+				if(changeType(list[j][index]) < changeType(list[j+1][index])){
 					var temp = list[j];
 					list[j] = list[j+1];
 					list[j+1] = temp;
@@ -144,4 +144,12 @@ function sortAlgorithm(flag, list, index){
 		}
 	}
 	return list;
+}
+
+function changeType(obj) {  // 转换类型
+    if (isNaN(obj))
+        return obj.toString();
+    else
+        return parseFloat(obj);
+
 }
